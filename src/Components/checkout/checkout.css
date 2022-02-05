@@ -1,0 +1,138 @@
+/* .chckout {
+  display: flex;
+  min-height: max-content;
+  flex-direction: column;
+}
+
+
+
+.ckeckout-left {
+  background-color: white;
+  padding: 10px;
+  margin: 8px;
+  flex: 1;
+}
+
+*/
+
+.checkout-container {
+  background-color: white;
+  min-height: 50vh;
+  display: flex;
+}
+
+.chckout {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addv-img {
+  width: 100%;
+  max-height: 150px;
+}
+
+.ckeckout-right {
+  background-color: rgb(221, 218, 218);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 8px;
+  height: fit-content;
+  flex: 1;
+  max-width: 450px;
+  border-radius: 3px;
+  border: 2px solid lightgrey;
+}
+
+.procced-btn {
+  background-color: rgb(218, 218, 76);
+  font-size: 18px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+}
+
+.ckeckout-left {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.your-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(216, 216, 216);
+  border-radius: 8px;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.my-product {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(238, 236, 236);
+}
+
+.my-product img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.stars span {
+  font-size: 25px;
+}
+
+.stars .icon {
+  color: rgb(218, 218, 102);
+}
+
+.remove-product-btn {
+  margin: 10px;
+  padding: 4px 20px;
+  border: none;
+  background-color: rgb(219, 219, 85);
+}
+
+.title-pr-st {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 500px) {
+  .chckout {
+    margin-top: 140px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .chckout {
+    margin-top: 130px;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 800px) {
+  .chckout {
+    margin-top: 106px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .chckout {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 500px) {
+  .ckeckout-left {
+    width: 100%;
+  }
+}

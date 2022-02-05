@@ -1,0 +1,78 @@
+.signin__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.signin__form {
+  text-align: center;
+  padding: 5px 10px;
+}
+.home__link {
+  width: 150px;
+}
+
+.signin__form form {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid rgb(221, 220, 220);
+  max-width: 400px;
+  height: fit-content;
+  background-color: hsl(206, 54%, 97%, 0.3);
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 2px 2px 3px lightgray;
+}
+
+.signin__form form > p {
+  align-self: center;
+}
+
+.signin__form form input {
+  width: 70%;
+  align-self: center;
+  margin-bottom: 5px;
+  font-size: 20;
+  padding: 5px;
+}
+
+.signin__form form > button {
+  align-self: center;
+  padding: 5px;
+  width: 60%;
+  border: none;
+  background-color: rgb(230, 230, 84);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-btn {
+  width: 20%;
+  padding: 5px;
+  background-color: lightgray;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: rgb(87, 85, 85);
+}
+
+@media (max-width: 800px) {
+  .signin__form {
+    margin-top: 60px;
+  }
+}
