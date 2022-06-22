@@ -4,7 +4,7 @@ import Product from "../Product/Product";
 import "./home.css";
 
 const Home = (props) => {
-  let TheCons = useContext(TheConext);
+  // let TheCons = useContext(TheConext);
   return (
     <div className="home">
       <div className="home-container">

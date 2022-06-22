@@ -29,7 +29,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home func={(e) => func(e)} />} />
-          {/* <Route path="/" element={<Home />} />  */}
           <Route
             path="/checkout"
             element={<Checkout removeP={(e) => removeproduct(e)} />}

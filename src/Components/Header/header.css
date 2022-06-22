@@ -125,14 +125,20 @@
   border-bottom: 2px solid darkorange;
 }
 
-/* header media query */
 .open-right-nav {
   display: none;
   border: none;
   margin: 5px;
   font-size: 20px;
   cursor: pointer;
+  background-color: aliceblue;
 }
+
+.open-right-nav .arrow-icon {
+  background-color: azure;
+}
+
+/* header media query */
 
 @media (max-width: 800px) {
   .header {
@@ -154,6 +160,7 @@
 
   .open-right-nav {
     display: block;
+    background-color: azure;
   }
 }
 

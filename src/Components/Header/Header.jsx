@@ -42,7 +42,7 @@ const Header = () => {
         <FcSearch className="search-icon" />
       </div>
       <button onClick={openRightNav} className="open-right-nav">
-        <FcDown />
+        <FcDown className="arrow-icon" />
       </button>
       <div ref={rightnav} className="right-nav">
         <div className="options option1">

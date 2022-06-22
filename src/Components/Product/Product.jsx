@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./product.css";
 import { HiStar } from "react-icons/hi";
 
 const Product = ({ func, id, title, price, src, rating }) => {
+  const [incart, setIncart] = useState(false);
   const addtobasket = (e) => {
     let myobj = { id, title, price, src, rating };
     func(myobj);
-    e.target.disabled = true;
+    // e.target.disabled = true;
+    setIncart(true);
   };
 
   return (
@@ -28,9 +30,13 @@ const Product = ({ func, id, title, price, src, rating }) => {
       </div>
       <div className="product-img">
         <img src={src} alt="a-product" />
-        <button onClick={(e) => addtobasket(e)} className="add-to-cart">
-          Add to cart
-        </button>
+        {incart ? (
+          <p>Check Your Cart</p>
+        ) : (
+          <button onClick={(e) => addtobasket(e)} className="add-to-cart">
+            Add to cart
+          </button>
+        )}
       </div>
     </div>
   );
